@@ -2,7 +2,7 @@ dependencies:
   build:
    - maven:3.6.3
    - java:11.0.8
-   - python:2.7.3
+   - python:2.7
 
 build_targets:
   - name: default
