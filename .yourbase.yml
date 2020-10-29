@@ -11,7 +11,7 @@ build_targets:
       - DEBIAN_FRONTEND=noninteractive
     commands:
       - apt -y update
-      - apt -y install python3-pip
+      - apt -y install python-pip
       - pip install requests
       - mvn -B compile package
 ci:
