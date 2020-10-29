@@ -2,12 +2,14 @@ dependencies:
   build:
    - maven:3.6.3
    - java:11.0.8
+   - python:2.7.3
 
 build_targets:
   - name: default
     container:
       image: yourbase/yb_ubuntu:18.04
     commands:
+      - pip install requests
       - mvn -B compile package
 ci:
   builds:
