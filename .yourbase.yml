@@ -13,7 +13,7 @@ build_targets:
       - apt -y update
       - apt -y install python-pip
       - pip install requests
-      - mvn -B compile package
+      - mvn package -DskipTests -Dmaven.javadoc.skip=true -B -V
 ci:
   builds:
     - name: default
